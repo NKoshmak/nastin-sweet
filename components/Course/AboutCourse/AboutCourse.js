@@ -3,7 +3,6 @@
 // components/AboutCourse.jsx
 import styles from "@/components/Course/AboutCourse/about.module.css";
 import Image from "next/image";
-import authorPhoto from "../../../public/images/nastya3-4.jpg";
 
 export default function AboutCourse() {
   return (
@@ -43,7 +42,7 @@ export default function AboutCourse() {
             <div className={styles.author}>
               <div className={styles.authorWrapper}>
                 <Image
-                  src={authorPhoto}
+                  src="/images/nastya3-4.jpg"
                   alt="Author photo"
                   fill
                   className={styles.authorImage}
