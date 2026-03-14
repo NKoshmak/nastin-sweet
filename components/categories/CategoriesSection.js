@@ -23,14 +23,14 @@ export default function CategoriesSection() {
 
           <CategoryCard
             title="Desserts"
-            href="/gallery?category=desserts"
+            href="/gallery?category=dessert"
             // image="/images/capcake2-3.jpg"
              image="/images/2.jpeg"
           />
 
           <CategoryCard
             title="Candy Bar"
-            href="/gallery?category=candy bar"
+            href="/gallery?category=candy-bar"
             // image="/images/candy_bar3-2.JPG"
              image="/images/3.jpeg"
           />
