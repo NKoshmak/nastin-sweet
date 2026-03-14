@@ -94,7 +94,7 @@ export default function Header() {
         </div> */}
 
         <NavLink href="/menu">Menu</NavLink>
-        <NavLink href="/courses/main">Courses</NavLink>
+        <NavLink href="/courses">Courses</NavLink>
         <NavLink href="/order">Order</NavLink>
       </nav>
     </header>
