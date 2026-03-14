@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 export default function MenuCard({ item, activeCategory, onFillingsClick }) {
-  // console.log(item);
 
   return (
     <div className="item">
@@ -45,7 +44,7 @@ export default function MenuCard({ item, activeCategory, onFillingsClick }) {
           </p>
         )}
 
-        {/* For sizes */}
+       
         {item.sizes && (
           <div className="sizes">
             {item.sizes.map((s, idx) => (
@@ -56,7 +55,7 @@ export default function MenuCard({ item, activeCategory, onFillingsClick }) {
           </div>
         )}
 
-        {/* For decorations */}
+      
         {item.decorations && (
           <div className="decorations">
             <p>
