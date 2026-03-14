@@ -1,0 +1,87 @@
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 3rem 0;
+  position: relative;
+}
+
+/* Gradient fade edges (luxury touch) */
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0) 100%);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff 0%, rgba(255,255,255,0) 100%);
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.item {
+  white-space: nowrap;
+  color: var(--color-brand-dark);
+  font-family: var(--font-karla);
+
+  font-size: clamp(0.7rem, 2.4vw, 1rem);
+
+  letter-spacing: clamp(0.08em, 1vw, 0.15em);
+
+  text-transform: uppercase;
+  opacity: 0.8;
+
+  margin-right: clamp(1.5rem, 5vw, 4rem);
+  font-weight: 500;
+}
+
+.item::after {
+  content: " · ";
+  opacity: 0.8;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-left: clamp(1.5rem, 5vw, 4rem);
+}
+
+.item::after {
+  content: " · ";
+  opacity: 0.8;
+  font-size: 1.5rem;
+  margin-left: 4rem;
+}
+
+.item:last-child::after {
+  content: "";
+}
+
+
+/* Keyframes */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Safari fix */
+@supports (-webkit-touch-callout: none) {
+  .track {
+    transform: translate3d(0, 0, 0);
+  }
+}

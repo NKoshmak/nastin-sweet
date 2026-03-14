@@ -1,0 +1,251 @@
+/** @format */
+
+.menuPage {
+  background: var(--color-gradient-accent);
+  /* background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(230, 180, 210, 0.25),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(230, 180, 210, 0.18),
+      transparent 40%
+    ),
+    var(--color-bg-blush-gradient); */
+}
+
+.menuContainer {
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  margin: clamp(40px, 8vw, 100px) auto;
+  padding: clamp(28px, 5vw, 80px) clamp(18px, 5vw, 50px);
+  border-radius: clamp(6px, 1vw, 8px);
+  background-color: #fcfbfb;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.05),
+    0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.glow {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 120%;
+  height: 120%;
+  background: url("/glow.png") no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.3;
+  filter: blur(100px);
+}
+
+.glowSoft {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  width: 700px;
+  height: 1400px;
+  background: url("/glow.png") no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.menuHeader {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto clamp(30px, 5vw, 50px);
+}
+
+.menuHeader h1 {
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  margin-bottom: clamp(8px, 1vw, 12px);
+  color: var(--color-brand-dark);
+}
+
+.menuHeader p {
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  color: var(--color-text-soft);
+  font-family: var(--font-karla);
+}
+
+.menuSection {
+  margin-bottom: clamp(35px, 6vw, 60px);
+}
+
+.menuTitle {
+  font-family: var(--font-playfair);
+  color: var(--color-brand-dark);
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin-bottom: clamp(16px, 3vw, 24px);
+  letter-spacing: 0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.menuItem {
+  margin-bottom: clamp(14px, 3vw, 20px);
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  gap: clamp(6px, 2vw, 12px);
+  flex-wrap: wrap;
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
+}
+
+.priceRow span:first-child {
+  white-space: nowrap;
+}
+
+.priceRow::after {
+  content: "";
+  flex: 0.8;
+  border-bottom: 1.2px dotted var(--color-brand-accent);
+  margin: 0 clamp(6px, 2vw, 10px);
+}
+
+.priceRow span:last-child {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.flavors {
+  margin-top: clamp(4px, 1vw, 6px);
+  max-width: 300px;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  color: var(--color-text-soft);
+  font-family: var(--font-karla);
+}
+
+.flavorItem::after {
+  content: " • ";
+}
+
+.flavorItem:last-child::after {
+  content: "";
+}
+
+/* NOTES */
+
+.itemNote,
+.sectionNote {
+  margin-top: clamp(6px, 2vw, 8px);
+  font-size: clamp(0.9rem, 2.3vw, 1rem);
+  font-style: italic;
+  color: var(--color-text-soft);
+  font-family: var(--font-karla);
+}
+
+/* .priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+} */
+
+.itemName {
+  flex: 0 1 auto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-brand-dark);
+  font-family: var(--font-playfair);
+}
+
+.itemMeta {
+  font-weight: 400;
+  color: var(--color-text-soft);
+  font-size: 1.05rem;
+  font-family: var(--font-karla);
+}
+
+.itemPrice {
+  flex: 0 0 auto;
+  min-width: 40px;
+  text-align: right;
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #c26b7b;
+  font-family: var(--font-playfair);
+}
+
+/* Fillings Section */
+.fillingsSection {
+  margin-top: clamp(40px, 8vw, 80px);
+}
+
+.fillingsType {
+  font-family: var(--font-playfair);
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  color: var(--color-brand-dark);
+  margin-bottom: clamp(16px, 3vw, 24px);
+}
+
+.fillingsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(16px, 3vw, 24px);
+  margin-bottom: clamp(30px, 6vw, 50px);
+}
+
+.fillingCard {
+  background: #fff;
+  border-radius: clamp(6px, 1vw, 8px);
+  padding: clamp(14px, 3vw, 20px);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.04);
+
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.fillingCard img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 8px;
+  margin-bottom: clamp(8px, 2vw, 12px);
+}
+
+.fillingCard h4 {
+  font-family: var(--font-playfair);
+  color: var(--color-brand-dark);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: clamp(4px, 1vw, 8px);
+}
+
+.fillingCard p {
+  font-family: var(--font-karla);
+  color: var(--color-text-soft);
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+@media (max-width: 600px) {
+  .menuContainer {
+    background-color: var(--color-bg-blush);
+    margin: clamp(40px, 8vw, 100px) auto 0;
+  }
+
+  .priceRow {
+    flex-wrap: wrap;
+  }
+
+  .priceRow::after {
+    display: none;
+  }
+
+  .itemPrice {
+    margin-left: auto;
+  }
+}

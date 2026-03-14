@@ -1,0 +1,28 @@
+.testimonials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(44, 52, 89, 0.1);
+  padding: 24px;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.name {
+  display: block;
+  margin-top: 12px;
+  color: #a78bfa;
+  font-weight: 500;
+  font-size: 14px;
+}

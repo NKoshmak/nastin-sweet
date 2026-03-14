@@ -1,0 +1,115 @@
+.faqSection {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 120px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Заголовок */
+.header {
+  margin-bottom: 48px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-size: clamp(10px, 1vw, 12px);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9aa0b2;
+  margin-bottom: 6px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.4rem, 1.2vw + 1rem, 2rem);
+  line-height: 1.2;
+  font-weight: 500;
+  color: #2f3b57;
+}
+
+/* Контейнер */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Картка */
+.item {
+  background: var(--color-bg-blush);
+  padding: clamp(14px, 2vw, 20px) clamp(18px, 3vw, 24px);
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+/* Питання */
+.question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: clamp(16px, 2.5vw, 18px);
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+
+  color: var(--color-brand-dark);
+  font-family: var(--font-playfair);
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+.icon {
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 300;
+}
+
+/* Відповідь */
+.answer {
+  margin-top: 12px;
+  font-size: clamp(14px, 2.5vw, 16px);
+  line-height: 1.55;
+  color: var(--color-text-soft);
+  font-family: var(--font-karla);
+}
+
+
+/* ─────────────────────────────── */
+/* 📱 Мобільні стилі                */
+/* ─────────────────────────────── */
+
+@media (max-width: 600px) {
+
+  .section {
+    margin-bottom: 80px;
+  }
+
+  .wrapper {
+    gap: 12px;
+  }
+
+  .item {
+    padding: 16px 18px;
+    border-radius: 14px;
+  }
+
+  .question {
+    gap: 12px;
+  }
+
+  .answer {
+    margin-top: 10px;
+  }
+}

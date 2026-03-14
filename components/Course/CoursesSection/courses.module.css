@@ -1,0 +1,311 @@
+.tabCard {
+  background: var(--color-bg-blush);
+  border: none;
+  padding: 30px;
+  margin-top: -10px; 
+  position: relative;
+  z-index: 2;
+  border-bottom-left-radius: 24px;
+   border-bottom-right-radius: 24px;
+}
+
+.tabs {
+  display: flex;
+  gap: 1px;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  padding-bottom: 0;
+   margin-bottom: 0;
+}
+
+.priceTag{
+margin-left:8px;
+opacity:0.8;
+font-weight:400;
+}
+
+.tab {
+  padding: 15px 20px;
+  background: #fae2ed;
+  font-weight: 400;
+  font-family: var(--font-karla);
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+  border: none;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  color: #7f445c;
+  transition: 0.25s;
+}
+
+.activeTab {
+  background: var(--color-brand-accent);
+  color: #fff;
+  
+  border-bottom: 1px solid white !important; 
+  z-index: 1;
+  position: relative;
+  transform: translateY(-8px);
+}
+
+.layout {
+  display: flex;
+  gap: 40px;
+}
+
+.overview {
+  width: 260px;
+  align-self: flex-start;
+  background: #fcfbfb;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee9e5;
+  color: var(--color-text-soft);
+  font-family: var(--font-karla);
+  text-align: left;
+}
+
+.list {
+  padding: 0;
+  margin-bottom: 36px;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;   
+  margin-bottom: 18px;
+  font-size: clamp(0.85rem, 1.3vw, 1rem);
+  font-weight: 300;
+  color: var(--color-brand-dark);
+
+    position: relative;
+  padding-left: 22px;
+}
+
+.list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--color-brand-accent);
+  font-weight: 600;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modules {
+  flex: 1;
+}
+
+.moduleIndex {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--color-brand-accent);
+  color: #fff;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  /* box-shadow: 0 4px 15px rgba(255, 120, 150, 0.25); */
+  flex-shrink: 0;
+}
+
+.moduleBox {
+  margin-bottom: 12px;
+  background: rgb(255, 253, 253);
+  border-radius: 12px;
+  border: 1px solid #ede9e4;
+}
+
+.moduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  cursor: pointer;
+  color: var(--color-brand-dark);
+  font-size: 1rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.textBlock h4 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.lessonCount {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6a6765;
+  margin-top: 2px;
+}
+
+/* .toggleIcon {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.toggleIcon::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(192, 106, 141, 0.15); 
+  opacity: 0;
+  transform: scale(0.7);
+  transition: all 0.25s ease;
+  z-index: 1;
+}
+
+
+.toggleIcon:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.horizontal,
+.vertical {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: var(--color-brand-dark);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.vertical {
+  transform: rotate(90deg);
+}
+
+.open .vertical {
+  transform: rotate(90deg) scaleY(0); 
+  opacity: 0;
+}
+
+.open .horizontal {
+  transform: rotate(180deg); 
+} */
+
+.moduleHeader h4 {
+  flex-grow: 1; 
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.moduleContent {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 22px;
+
+  transition: 
+    max-height 2.8s ease-in-out,
+    opacity 0.25s ease,
+    padding 0.25s ease;
+}
+
+/* Коли відкрито */
+.moduleContent.open {
+  max-height: 600px; 
+  opacity: 1;
+  padding: 0 22px;
+}
+
+.moduleContent ul {
+  list-style: decimal;
+  padding-left: 50px;
+  font-family: var(--font-karla);
+  font-size: clamp(0.8rem, 1.3vw, 1rem);
+  line-height: 1.4;
+}
+
+.moduleContent ol {
+  margin: 0;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.moduleContent ol li {
+  padding-left: 6px;
+}
+
+.price,
+.note {
+  color: var(--color-text-soft);
+  text-align: left;
+  font-size: 0.9rem;
+  padding-left: 22px;
+}
+
+@media (max-width: 768px) {
+
+  .tabCard {
+    padding: 20px;
+  }
+
+  .layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .overview {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .moduleHeader {
+    padding: 16px 18px;
+  }
+
+  .moduleHeader h4 {
+    font-size: 1.1rem;
+  }
+
+  .moduleContent {
+    padding: 0 18px;
+  }
+
+  .moduleBox.open .moduleContent {
+    padding: 16px 18px;
+  }
+
+  .moduleIndex {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}

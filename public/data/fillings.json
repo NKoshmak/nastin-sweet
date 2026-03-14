@@ -1,0 +1,79 @@
+  [
+    {
+    "category": "Fillings",
+    "items": [
+      {
+        "type": "Cakes",
+        "fillings": [
+          {
+            "name": "Delight Cake",
+            "description": "Delicate vanilla biscuit, cheese cream, strawberry/raspberry/blueberry/mango-passion fruit",
+            "image": "/images/fillings2/delight-cake.webp"
+          },
+          {
+            "name": "Snickers",
+            "description": "Chocolate biscuit, peanuts in homemade caramel, and delicate cheese cream",
+            "image": "/images/fillings2/snikers.webp"
+            
+          },
+          {
+            "name": "Strawberry cake with cheesecake",
+            "description": "Soft vanilla biscuit, cheese cream, strawberry confiture and vanila cheesecake",
+            "image": "/images/fillings2/strawberry-with-cheesecake.webp"
+          },
+      
+          {
+            "name": "Red Velvet",
+            "description": "Moist chocolate biscuit, cheese cream with cherry compote",
+            "image": "/images/fillings2/red-velvet.webp"
+          },
+          {
+            "name": "Chocolate & Banana",
+            "description": "Delicate chocolate biscuit, caramelized bananas and chocolate cream cheese",
+            "image": "/images/fillings2/chockolate-banana.webp"
+          },
+          {
+            "name": "Pistachio & Raspberry",
+            "description": "Delicate pistachios biscuit, cream cheese with pistachios paste, raspberry confiture",
+            "image": "/images/fillings2/pistachio.jpeg"
+          },
+            {
+            "name": "Blueberry Cake",
+            "description": "Soft vanilla biscuits with blueberries, blueberries cream cheese, blueberry confiture",
+            "image": "/images/fillings2/bluberry.jpeg"
+          }
+        ]
+      },
+      {
+        "type": "Mousse Cakes & Desserts",
+        "fillings": [
+          {
+            "name": "Mango - Passion-fruit",
+            "description": "Delicate biscuit, mango-passion fruit conﬁ, mousse on white chocolate",
+             "image": "/images/fillings2/mango.webp"
+          },
+          {
+            "name": "Berry Yogurt",
+            "description": "Delicate sponge cake with berries, yogurt mousse and berry conﬁture",
+            "image": "/images/fillings2/berry-yogurt.jpeg"
+          },
+          {
+            "name": "Three Chocolates",
+            "description": "Chocolate biscuit with dark, milk, and white chocolate mousse",
+            "image": "/images/fillings2/3chockolate.jpeg"
+          },
+          {
+            "name": "Hazelnut & Chocolate",
+            "description": "Hazelnut biscuit, hazelnut praline and caramel, milk chocolate mousse and  hazelnut mousse",
+            "image": "/images/fillings2/hazelnut.png"
+          },
+          {
+            "name": "Raspberry & White Chocolate",
+            "description": "Delicate raspberry biscuit, mousse on white chocolate and Greek yogurt, raspberry conﬁture",
+            "image": "/images/fillings2/respberry-whitechocolate.webp"
+          }
+        ]
+      }
+    ]
+  }
+]

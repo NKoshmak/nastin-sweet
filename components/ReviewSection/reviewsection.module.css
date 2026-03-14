@@ -1,0 +1,175 @@
+.sectionAlt {
+
+  background: var(--color-bg-blush);
+  padding: clamp(60px, 10vw, 120px) 20px;
+
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: clamp(30px, 6vw, 60px);
+  align-items: flex-start;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+  position: relative;
+
+  margin: auto;
+}
+
+.quoteMark {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  transform: translate(-50%, -50%) rotate(180deg);
+
+  width: clamp(120px, 18vw, 260px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.title {
+  margin: 0;
+  z-index: 2;
+  position: relative;
+  color: var(--color-brand-dark);
+  font-family: var(--font-playfair);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.subtitle {
+  margin-top: clamp(8px, 1vw, 12px);
+  z-index: 2;
+  position: relative;
+
+  color: var(--color-text-soft);
+  font-family: var(--font-karla);
+
+  font-size: clamp(0.9rem, 0.8vw + 0.5rem, 1.1rem);
+}
+
+.right {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 4vw, 32px);
+  position: relative;
+}
+
+.right .card:nth-child(1) {
+  transform: translateX(clamp(40px, 10vw, 120px));
+}
+
+.right .card:nth-child(2) {
+  transform: translateX(clamp(-10px, -3vw, -20px));
+}
+
+.right .card:nth-child(3) {
+  transform: translateX(clamp(40px, 10vw, 120px));
+}
+
+
+
+.card {
+  position: relative; /* важливо */
+  z-index: 2;
+  background: #fff;
+  border-radius: 8px;
+  padding: clamp(12px, 1.5vw, 20px);
+  max-width: 420px;
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.25s ease;
+}
+
+.right .card:nth-child(2)::after {
+  content: "";
+  position: absolute;
+
+  bottom: -350px; /* трохи виходить за межі */
+  left: 40px;  /* зміщення у правий кут */
+
+  width: 320px;    /* регулюєш розмір glow */
+  height: 550px;
+
+  background: url("/glow.png") no-repeat;
+  background-size: contain;
+
+  opacity: 0.6; /* ніжність */
+  pointer-events: none;
+  z-index: -1; /* щоб завжди було під карткою */
+
+  filter: blur(60px);
+  transform: rotate(90deg);
+  transform-origin: center; /* дрібний бонус */
+}
+
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.cardText {
+  font-family: var(--font-playfair);
+  color: var(--color-brand-dark);
+
+  margin-bottom: clamp(8px, 1vw, 12px);
+  letter-spacing: 0.2px;
+  line-height: 1.6;
+
+  /* responsive */
+  font-size: clamp(0.95rem, 1vw + 0.3rem, 1.2rem);
+}
+
+.avatarInitials {
+  width: clamp(40px, 5vw, 48px);
+  height: clamp(40px, 5vw, 48px);
+
+  border-radius: 50%;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--font-dancing);
+  font-size: clamp(0.9rem, 1vw + 0.5rem, 1.3rem);
+  color: var(--color-brand-accent);
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right .card:nth-child(1),
+  .right .card:nth-child(2),
+  .right .card:nth-child(3) {
+    transform: translateX(0);
+  }
+
+  .right {
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .content {
+    gap: 40px;
+  }
+}

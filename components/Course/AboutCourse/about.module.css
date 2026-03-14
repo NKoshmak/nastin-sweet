@@ -1,0 +1,106 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 2.6fr;
+  gap: 70px;
+}
+
+.glow {
+  position: absolute;
+  left:-100px; 
+  top: 50px; 
+  
+  width: 500px;   
+  height: 800px; 
+
+  background: url("/glow.png") no-repeat;
+  background-size: contain;
+
+  pointer-events: none; 
+  z-index: 0;
+  opacity: 0.4;
+  filter: blur(60px); 
+}
+
+.glowSoft {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  width: 700px;
+  height: 1400px;
+  background: url("/glow.png") no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.left {
+  margin-top: clamp(4px, 1vw, 12px);
+}
+
+.right {
+  font-family: var(--font-karla);
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  line-height: 1.6;
+  color: var(--color-text-soft);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 3vw, 24px);
+  margin-top: 12px;
+}
+
+.right p {
+  margin: 0;
+}
+
+/* AUTHOR BLOCK */
+.author {
+  margin-top: clamp(24px, 4vw, 32px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.authorWrapper {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.authorImage {
+  object-fit: cover;
+  object-position: 50% 15%;
+  transform: scale(1.4);
+}
+
+.authorName {
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: var(--color-brand-dark);
+}
+
+.authorSubtitle {
+  font-size: clamp(0.65rem, 1.4vw, 0.8rem);
+  color: var(--color-badge);
+}
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .left {
+    margin-top: 0;
+  }
+
+  .authorWrapper {
+    width: 46px;
+    height: 46px;
+  }
+}

@@ -1,0 +1,250 @@
+/** @format */
+
+.page {
+  background: var(--color-gradient-accent);
+  min-height: 100vh;
+  padding: 120px 20px 80px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  padding: clamp(20px, 2vw, 30px);
+  background: white;
+  border-radius: 16px;
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.05),
+    0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.heroLayout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: clamp(40px, 6vw, 100px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left {
+  padding-left: 20px;
+}
+
+.left::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: url("/cake.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.05;
+  top: -100px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.heroTitle {
+  font-family: var(--font-playfair);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  line-height: 1.1;
+  color: var(--color-brand-dark);
+  margin-bottom: 24px;
+}
+
+.heroTitle span {
+  font-style: italic;
+  color: var(--color-brand-accent);
+}
+
+.heroText {
+  font-family: var(--font-karla);
+  font-size: 1.05rem;
+  max-width: 420px;
+  color: var(--color-text-soft);
+  line-height: 1.6;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 800px;
+  height: 800px;
+  background: url("/glow.png") no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  filter: blur(60px);
+}
+
+.glowSoft {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  width: 700px;
+  height: 800px;
+  background: url("/glow.png") no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.title {
+  text-align: center;
+  font-family: var(--font-playfair);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 40px;
+  font-weight: 500;
+  color: var(--color-brand-dark);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #e8e4e6;
+  background: #faf8f9;
+  font-family: var(--font-karla);
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+select.input {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 15px 40px 10px 16px;
+  color: #000;
+}
+
+.input[type="date"],
+.input[type="time"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 54px;
+  color: #000;
+}
+
+
+.field {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 20px 16px 10px;
+  border-radius: 10px;
+  border: 1px solid #e8e4e6;
+  background: #faf8f9;
+  font-family: var(--font-karla);
+  font-size: 0.95rem;
+}
+
+.label {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-size: 0.9rem;
+  color: var(--color-brand-dark);
+  font-family: var(--font-karla);
+  opacity: 0.5;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+/* Коли є текст або фокус */
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label,
+.textarea:focus + .label,
+.textarea:not(:placeholder-shown) + .label {
+  top: 8px;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-brand-accent);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(242, 191, 204, 0.2);
+}
+
+.textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.dateRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.file label {
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.file label {
+  font-family: var(--font-playfair);
+  font-size: 0.95rem;
+  color: var(--color-brand-dark);
+}
+
+.file input {
+  border: 1px dashed #e3d9de;
+  padding: 10px;
+  border-radius: 8px;
+  background: #faf7f8;
+  margin-bottom: 18px;
+}
+
+
+
+@media (max-width: 768px) {
+  .dateRow {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroLayout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .left {
+    text-align: center;
+    padding: 0;
+  }
+
+  .heroText {
+    margin: 0 auto;
+  }
+}
+
+

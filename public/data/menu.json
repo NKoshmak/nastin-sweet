@@ -1,0 +1,55 @@
+[
+  {
+    "category": "Cakes",
+    "items": [
+      {
+        "name": "Bento Cake",
+        "size": "5in for 4p",
+        "price": "$60"
+      },
+      {
+        "name": "Mousse Cake",
+        "size": "4in for 2p",
+        "price": "$40"
+      },
+      {
+        "name": "Custom Cake",
+        "sizes": [
+          { "weight": "1.5kg", "size": "6in", "serves": "8–10p", "price": "$120" },
+          { "weight": "2kg", "size": "7in", "serves": "10–12p", "price": "$160" },
+          { "weight": "2.5kg", "size": "8in", "serves": "12–15p", "price": "$200" }
+        ]
+      }
+    ],
+    "notes": [
+      "Decoration is charged separately.",
+      "Wedding cake pricing is calculated individually."
+    ]
+  },
+  {
+    "category": "Cake Decorations",
+    "items": [
+      { "name": "Chocolate Velvet Coating", "price": "$10" },
+      { "name": "Edible Print", "price": "$20" },
+      { "name": "Chocolate Decorations", "price": "$10" }
+    ]
+  },
+  {
+    "category": "Desserts",
+    "items": [
+      { "name": "Mousse desserts", "price": "$9", "weight": "90-100g/each" },
+      { "name": "Macaroons", "price": "$5.5", "flavors": [
+          "Bounty", "Chocolate-caramel-nuts", "Pistachio-Raspberry",
+          "Mango", "Poppy Seed-Lemon", "Mascarpone-Strawberry",
+          "Truffle", "Pear-Dor blue"
+        ],  "note": "Min. order 4 pcs", "weight": "50g/each"},
+      { "name": "Eclairs", "price": "$7",  "note": "Min. 4 pcs", "weight": "100-120g/each",  "flavors": ["Vanilla", "Chocolate", "Caramel", "Pistachio (+$1)"]},
+      { "name": "Cupcakes", "price": "$6", "note": "Box of 4/6/12", "weight": "100g/each" }
+    ],
+    "notes": [
+      "Custom dessert tables and candy bars are available."
+    ]
+  }
+]
+
+ 

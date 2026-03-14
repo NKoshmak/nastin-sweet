@@ -1,0 +1,44 @@
+.course {
+  padding: 5rem 20rem;
+  background: #fff4f8;
+  color: #2a2a2a;
+  min-height: 100vh;
+}
+
+.courseTitle {
+  margin-top: 100px;
+  color: #3e4c6f;
+}
+
+.module {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  padding: 3rem;
+  
+}
+
+.moduleImage {
+  object-fit: cover;
+  object-position: top/center;
+  border-radius: 50%;
+
+}
+.module h2 {
+  color: #e6467e;
+}
+.bonusBlock {
+  background: #ffe5ee;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.courseButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
