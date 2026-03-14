@@ -16,20 +16,23 @@ export default function CategoriesSection() {
           <CategoryCard
             title="Cakes"
             href="/gallery?category=cake"
-            image="/images/cake2-3.jpg"
+            // image="/images/cake2-3.jpg"
+            image="/images/1.jpeg"
             large
           />
 
           <CategoryCard
             title="Desserts"
             href="/gallery?category=desserts"
-            image="/images/capcake2-3.jpg"
+            // image="/images/capcake2-3.jpg"
+             image="/images/2.jpeg"
           />
 
           <CategoryCard
             title="Candy Bar"
             href="/gallery?category=candy bar"
-            image="/images/candy_bar3-2.JPG"
+            // image="/images/candy_bar3-2.JPG"
+             image="/images/3.jpeg"
           />
         </div>
       </div>

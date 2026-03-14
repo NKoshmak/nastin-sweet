@@ -20,7 +20,7 @@ export default function AuthorSection() {
           <div className={styles.photoBlock}>
             <div className={styles.photoWrapper}>
               <Image
-                src="/public/images/nastya3-4.jpg"
+                src="/images/mainnastya.jpeg"
                 alt="Анастасія Томко"
                 fill
                 className={styles.photo}

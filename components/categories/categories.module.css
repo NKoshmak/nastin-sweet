@@ -42,12 +42,13 @@
 .image {
   object-fit: cover;
   transition: transform 0.5s ease;
+  /* filter: brightness(1.02) contrast(1.01); */
   /* filter: saturate(1.02) contrast(1.04); */
 }
 
 .card:hover .image {
   transform: scale(1.05);
-  filter: saturate(1.02) contrast(1.02);
+  /* filter: saturate(1.01) contrast(1.01); */
 }
 
 /* overlay */

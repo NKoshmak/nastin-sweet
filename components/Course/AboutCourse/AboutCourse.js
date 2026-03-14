@@ -42,7 +42,7 @@ export default function AboutCourse() {
             <div className={styles.author}>
               <div className={styles.authorWrapper}>
                 <Image
-                  src="/images/nastya3-4.jpg"
+                  src="/images/mainnastya.jpeg"
                   alt="Author photo"
                   fill
                   className={styles.authorImage}
