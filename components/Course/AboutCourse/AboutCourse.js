@@ -3,7 +3,7 @@
 // components/AboutCourse.jsx
 import styles from "@/components/Course/AboutCourse/about.module.css";
 import Image from "next/image";
-import authorPhoto from "../../../public/images/nastya3-4.JPG";
+import authorPhoto from "../../../public/images/nastya3-4.jpg";
 
 export default function AboutCourse() {
   return (
