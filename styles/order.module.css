@@ -13,7 +13,7 @@
   width: 100%;
   margin: auto;
   padding: clamp(20px, 2vw, 30px);
-  background: white;
+  background: #fffafb;
   border-radius: 16px;
   box-shadow:
     0 30px 60px rgba(0, 0, 0, 0.05),
