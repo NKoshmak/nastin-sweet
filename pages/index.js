@@ -375,18 +375,4 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps({ locale }) {
-  const messages = await import(`../i18n/en/${locale}.json`);
-  return {
-    props: {
-      messages: messages.default,
-    },
-  };
-}
 
-// export async function getStaticPaths() {
-//   return {
-//     paths: [{ params: { locale: "en" } }, { params: { locale: "ua" } }],
-//     fallback: false,
-//   };
-// }
