@@ -9,7 +9,7 @@
   background: var(--color-bg-blush);
   border-radius: 24px;
   padding: 40px 32px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08); */
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -17,7 +17,7 @@
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
 }
 
 /* Icon bubble */

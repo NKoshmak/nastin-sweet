@@ -63,6 +63,7 @@
 .photo {
   object-fit: cover;
   border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .nameCard {
@@ -73,7 +74,7 @@
   width: 100%;
   background: white;
   padding: 18px 24px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
   text-align: center;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;

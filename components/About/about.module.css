@@ -53,7 +53,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .card {
@@ -64,7 +64,7 @@
   background-color: #f6f0f8;
   padding: 48px;
   border-radius: 10px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
 }
 
 

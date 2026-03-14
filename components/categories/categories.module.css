@@ -16,7 +16,7 @@
   overflow: hidden;
   border-radius: 8px;
   display: block;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   transition:
     transform 0.45s ease,
     box-shadow 0.45s ease;

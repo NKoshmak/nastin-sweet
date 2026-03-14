@@ -12,7 +12,7 @@ export default function AboutSection() {
         <div className={styles.aboutBlock}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/mainnastya.jpeg"
+              src="/images/newnastya.png"
               alt="Nastin"
               className={styles.image}
               fill
