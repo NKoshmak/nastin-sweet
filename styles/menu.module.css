@@ -234,7 +234,8 @@
 
 @media (max-width: 600px) {
   .menuContainer {
-    background-color: var(--color-bg-blush);
+    /* background-color: var(--color-bg-blush); */
+    background-color: #fffafb;
     margin: clamp(40px, 8vw, 100px) auto 0;
   }
 
