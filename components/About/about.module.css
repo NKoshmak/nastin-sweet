@@ -40,7 +40,7 @@
 
 .imageWrapper {
   position: relative;
-  width: 490px;
+  width: 380px;
   aspect-ratio: 4/4.7;
   overflow: visible;
   border-radius: 8px;
@@ -48,7 +48,7 @@
 }
 
 .image {
-  transform: scale(0.88); 
+  /* transform: scale(0.88);  */
   transform-origin: center;
   object-fit: cover;
   object-position: center;
@@ -58,8 +58,8 @@
 
 .card {
   position: absolute;
-  left: 370px;
-  top: 160px;
+  left: 340px;
+  top: 120px;
   width: 520px;
   background-color: #f6f0f8;
   padding: 48px;

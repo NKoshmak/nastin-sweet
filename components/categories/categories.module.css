@@ -36,14 +36,16 @@
   aspect-ratio: 4 / 5;
 }
 
+.card.large img {
+  object-position: center 80%;
+}
+
 
 /* image */
 
 .image {
   object-fit: cover;
   transition: transform 0.5s ease;
-  /* filter: brightness(1.02) contrast(1.01); */
-  /* filter: saturate(1.02) contrast(1.03); */
 }
 
 .card:hover .image {
