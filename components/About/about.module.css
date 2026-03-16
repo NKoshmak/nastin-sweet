@@ -61,7 +61,7 @@
   left: 340px;
   top: 120px;
   width: 520px;
-  background-color: #f6f0f8;
+  background-color: var(--color-bg-blush);
   padding: 48px;
   border-radius: 10px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
